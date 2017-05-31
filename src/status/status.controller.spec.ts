@@ -18,7 +18,7 @@ describe('StatusController', () => {
     describe('getStatus', () => {
 
         it('provides the DeLorean\'s speed, app name, and google availability', async () => {
-            const expected = { app: 'heroku-bhtp-demo', deloreanSpeed: '88 mph', google: true };
+            const expected = { app: 'heroku-bhtp-demo', deloreanSpeed: '89 mph', google: true };
             const result = await controller.getStatus();
 
             assert.deepEqual(result, expected);
@@ -28,7 +28,7 @@ describe('StatusController', () => {
             serviceMock.reset();
             serviceMock.setup((s) => s.isGoogleActive()).throws(new Error('oops'));
 
-            const expected = { app: 'heroku-bhtp-demo', deloreanSpeed: '88 mph', google: false };
+            const expected = { app: 'heroku-bhtp-demo', deloreanSpeed: '89 mph', google: false };
             const result = await controller.getStatus();
 
             assert.deepEqual(result, expected);

@@ -17,7 +17,7 @@ export class StatusController {
 
         return {
             app: 'heroku-bhtp-demo',
-            deloreanSpeed: '88 mph',
+            deloreanSpeed: '89 mph',
             google: statusSuccessful
         };
     }
