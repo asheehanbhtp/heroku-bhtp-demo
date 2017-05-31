@@ -1,5 +1,9 @@
 {
   "name": "heroku-bhtp-demo",
+  "description": "Demo application demonstrating Heroku pipelines",
+  "repository": "https://github.com/asheehanbhtp/bhtp-heroku-demo",
+  "logo": "https://bhtpcdn2.azureedge.net/media/1164/bhtp_logo_distressed.png",
+  "success_url": "/status",
   "scripts": {
   },
   "env": {
